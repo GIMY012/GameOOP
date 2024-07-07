@@ -1,0 +1,127 @@
+header{
+  /* background-image: url(../img/wraper.png);
+  background-size: cover;
+  background-position: center; */
+  /* height: 100vh; */
+}
+body{
+  background-color:  #272b30;
+  color:#fff
+}
+.layer{
+  background-color: #32353A
+}
+a img{
+  width: 40px;
+}
+nav,.btn-sm{
+  top:35% ;
+  background-color: #3A497B;
+  color: white !important;
+}
+a{
+  color:white !important
+}
+ul a{
+  font-family: "Comfortaa", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400 !important;
+  font-style: normal;
+  font-size: 12px !important;
+  line-height: 18px !important;
+  
+}
+ul a:hover{
+  color: rgb(0, 153, 204) !important;
+  
+}
+.nav-item .nav-link.active{
+  color: rgb(0, 153, 204) !important;
+
+}
+div>a{
+  font-family: "Nerko One", cursive !important;
+  font-weight: 500  !important;
+  font-style: normal !important;
+  font-size: 20px;
+  line-height: 24px;
+}
+.nerko-one-regular {
+  font-family: "Nerko One", cursive !important;
+  font-weight: 400;
+  font-style: normal;
+}
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700 */
+
+.comfortaa-400 {
+  font-family: "Comfortaa", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.comfortaa-700 {
+  font-family: "Comfortaa", sans-serif !important;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.active{
+  color: #09c ;
+}
+
+/****************** loading ********************/
+.loading {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background-color: #272b30e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 4px solid #fff;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: relative;
+}
+.loader::after {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border-left: 4px solid #ff3d00;
+  border-bottom: 4px solid transparent;
+  animation: rotation 0.5s linear infinite reverse;
+}
+@keyframes rotation {
+  0% {
+     transform: rotate(0deg);
+  }
+  100% {
+     transform: rotate(360deg);
+  }
+}
+
+
+
+/********************** end loading ************/
+
+.card {
+  filter: grayscale(0.7);
+  transition: transform 0.5s, filter 0.5s 0.1s;
+}
+.card:hover {
+  transform: scale(1.05);
+  filter: grayscale(0);
+}
